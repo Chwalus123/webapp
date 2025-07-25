@@ -3,7 +3,7 @@
 ## 1. Uruchomienie aplikacji
 
 1. Do obsługi aplikacji używałem XAMPP'a.
-2. W przypadku jeżeli korzystasz z XAMPP'a, skopiuj folder `webapp` do katalogu `htdocs` w XAMPP (`c:\xampp\htdocs\`).
+2. W przypadku jeżeli korzystasz z XAMPP'a, utwórz folder `webapp` w katalogu `htdocs` w XAMPP (`c:\xampp\htdocs\`) oraz przekopiuj tam pliki oraz foldery z repozytorium.
 3. Uruchom serwer Apache i MySQL w panelu XAMPP klikając START.
 4. Zaimportuj bazę danych załaczoną w folderze `webapp` do XAMPP, poprzez kliknięcie przycisku admin w panelu XAMPP przy MySQL obok przyisku start/stop.
 5. Ukaże się nam phpMyAdmin, z przycisków na górze wybieramy wybieramy SQL klikając na niego wpisujemy polecenie `create database webapp_db`, to utworzy nam naszą baze danych
