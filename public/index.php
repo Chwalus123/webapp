@@ -14,30 +14,32 @@ include 'header.php';
 ?>
 <div class="container-fluid min-vh-100 d-flex justify-content-center align-items-center">
     <div class="row w-100 justify-content-center">
-        <div class="col-md-6 border border-2 border-dark rounded-3 p-4">
+        <div class="col-lg-8 col-xl-6 border border-2 border-dark rounded-3 p-4">
             <h2 class="mt-4 text-center">Lista klientów</h2>
-            <table class="mt-4 table table-bordered">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Klient</th>
-                        <th>Firma</th>
-                        <th>Telefon</th>
-                        <th>Opiekunowie</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php foreach ($rows as $r): ?>
+            <div class="table-responsive">
+                <table class="mt-4 table table-lg-8 table-xl-6 table-bordered">
+                    <thead>
                         <tr>
-                            <td><?= $r['id'] ?></td>
-                            <td><?= htmlspecialchars($r['firstName'] . ' ' . $r['lastName']) ?></td>
-                            <td><?= htmlspecialchars($r['company']) ?></td>
-                            <td><?= htmlspecialchars($r['phone']) ?></td>
-                            <td><?= htmlspecialchars($r['carers'] ?: '—') ?></td>
+                            <th>#</th>
+                            <th>Klient</th>
+                            <th>Firma</th>
+                            <th>Telefon</th>
+                            <th>Opiekunowie</th>
                         </tr>
-                    <?php endforeach; ?>
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($rows as $r): ?>
+                            <tr>
+                                <td><?= $r['id'] ?></td>
+                                <td><?= htmlspecialchars($r['firstName'] . ' ' . $r['lastName']) ?></td>
+                                <td><?= htmlspecialchars($r['company']) ?></td>
+                                <td><?= htmlspecialchars($r['phone']) ?></td>
+                                <td><?= htmlspecialchars($r['carers'] ?: '—') ?></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>
