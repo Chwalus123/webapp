@@ -15,7 +15,7 @@ include 'header.php';
 
 <div class="container-fluid min-vh-100 d-flex justify-content-center align-items-center">
     <div class="row w-100 justify-content-center">
-        <div class="col-md-3 border border-2 border-dark rounded-3 p-4">
+        <div class="col-xl-3 col-l-4 col-md-6 border border-2 border-dark rounded-3 p-4">
             <h2 class="text-center">Dodaj opiekuna</h2>
             <?php if ($msg): ?>
                 <div class="alert alert-success"><?= htmlspecialchars($msg) ?></div>
