@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="d-flex justify-content-evenly mb-4">
+    <nav class="d-flex justify-content-evenly mb-4 mt-3">
         <a href="index.php" class="btn btn-sm btn-outline-primary">Klienci</a>
         <a href="add_client.php" class="btn btn-sm btn-outline-primary">Dodaj klienta</a>
         <a href="add_employee.php" class="btn btn-sm btn-outline-primary">Dodaj opiekuna</a>
