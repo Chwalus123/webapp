@@ -1,0 +1,15 @@
+{
+    "name": "webapp/app",
+    "description": "Web app",
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dev",
+            "email": "dev@example.com"
+        }
+    ],
+    "require": {}
+}
